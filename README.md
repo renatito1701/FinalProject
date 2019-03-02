@@ -1,4 +1,4 @@
-# FinalProject
+# Project Proposal
 
 ## Project Description
 
@@ -12,3 +12,18 @@ study abroad, move to a different country when they finish their studies or that
 * What are the happiest countries per continent and what variable contributes most to their score?
 
 ## Technical Description
+__Q:__ How will you be reading in your data (i.e., are you using an API, or is it a static .csv/.json file)?
+
+__A__: We are going to be using a static .csv file which we are going to read in through R.
+
+__Q__: What types of data-wrangling (reshaping, reformatting, etc.) will you need to do to your data?
+
+__A__: We aren’t going to have to do too mush data-wrangling because the .csv has already been shaped to find the information we need to answer our questions.
+
+__Q__: What (major/new) libraries will be using in this project (no need to list common libraries that are used in many projects such as dplyr)
+
+__A__: We are going to be using ggplot, data.table, leaflet, maps, .
+
+__Q__: What major challenges do you anticipate?
+
+__A__:  Major challenges we anticipate are going to be displaying our data in a way that accurately depicts our message. Another challenge might be creating charts that using different data like GDP, freedom and generousity while still show world happiness levels.
