@@ -10,3 +10,5 @@ study abroad, move to a different country when they finish their studies or that
 * What the average happiness score is by continent and or region?
 * What the main factors contributing to the happiness score for the top 15 countries?
 * What are the happiest countries per continent and what variable contributes most to their score?
+
+## Technical Description
