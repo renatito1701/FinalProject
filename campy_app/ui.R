@@ -2,10 +2,17 @@ library(shiny)
 library(ggplot2)
 library(dplyr)
 
+#second page
+front_page <- tabPanel(
+  "Overview", 
+  titlePanel("Project overview")
+  
+)
 
-#first page
-page_one <- tabPanel(
-  "First Page", 
+
+#first interactive page
+question_2 <- tabPanel(
+  "Second Question", 
   titlePanel("Main factors contributing to Happiness"), 
   
   #sidebar layout
@@ -14,38 +21,33 @@ page_one <- tabPanel(
       selectInput(
         inputId = "select_factor",
         label = "Factors",
-        choices = c("Freedom", "GDP", "")
+        choices = c("Freedom", "GDP", "Health")
       )
     ),
     mainPanel(
       h3("Factors Correlating to Happiness"),
-      plotOutput("freeplot")
+      plotOutput("freePlot")
     )
   )
 )
 
-#second page
-page_two <- tabPanel(
-  "Second Page", 
-  titlePanel("Percentage of Poverty per County"),
+#second interative page
+question_1 <- tabPanel(
+  "First Question", 
+  titlePanel("Average Happiness Scores per Continent"),
   
   #sidebar layout
   sidebarLayout(
     sidebarPanel(
       radioButtons(
-        inputId = "age_group",
-        label = "Age Group",
-        choices = c("percadultpoverty", "percelderlypoverty") 
-      ),
-      radioButtons(
-        inputId = "color",
-        label = "color Separation",
-        choices = c("white", "black") 
+        inputId = "extra_factor",
+        label = "extra factor",
+        choices = c("GDP", "Life Expectancy", "Trust in Government") 
       )
     ),
     mainPanel(
-      h3("Plot"),
-      plotOutput("plot2")
+      h3("Average Happiness by Continent"),
+      plotOutput("averagePlot")
     )
   )
 )
@@ -53,6 +55,7 @@ page_two <- tabPanel(
 # pages
 ui <- navbarPage(
   "World Happiness Project",
-  page_one,         
-  page_two
+  front_page,         
+  question_1,
+  question_2
 )
