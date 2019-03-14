@@ -2,10 +2,26 @@ library(shiny)
 library(ggplot2)
 library(dplyr)
 
-#second page
+#first page
 front_page <- tabPanel(
   "Overview", 
-  titlePanel("Project overview")
+  titlePanel("World Happiness & Contributing Factors"),
+  tags$br(),
+  tags$h1(tags$strong("Project Overview")),
+  tags$br(),
+
+  tags$p("In our project we looked at the ",
+    tags$a(href="https://www.kaggle.com/unsdsn/world-happiness", "world happiness datasets"), "from the website Kaggle. 
+    The datasets given included a happiness score, happiness rank, and multiple contributing
+    factors like GDP, freedom, generosity, government trust, ect. We will be using the
+    2015, 2016, and 2017 happiness dataset. In our project we looked to answer two main questions:"),
+  tags$br(),
+
+  tags$ul(
+    tags$li("What main factors help contribute to higher happiness scores in 2017"), 
+    tags$li("What the average happiness score is by continent and or region?")
+  )
+
   
 )
 

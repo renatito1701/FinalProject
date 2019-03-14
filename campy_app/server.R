@@ -1,19 +1,11 @@
-#
-# This is the server logic of a Shiny web application. You can run the 
-# application by clicking 'Run App' above.
-#
-# Find out more about building applications with Shiny here:
-# 
-#    http://shiny.rstudio.com/
-#
-
 library(ggplot2)
 library(shiny)
 library(dplyr)
 library(countrycode)
 library(ggrepel)
+
 #question 2 wrangling
-happ17 <- read.csv("../data/2017.csv")
+happ17 <- read.csv("data/2017.csv")
 free_data <- select(happ17, Freedom, Happiness.Score, Trust..Government.Corruption.)
 gdp_data <- select(happ17, Economy..GDP.per.Capita., Happiness.Score, Trust..Government.Corruption.)
 health_data <- select(happ17, Health..Life.Expectancy., Happiness.Score, Trust..Government.Corruption.)
