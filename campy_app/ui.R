@@ -9,7 +9,6 @@ front_page <- tabPanel(
   
 )
 
-
 #first interactive page
 question_2 <- tabPanel(
   "Second Question", 
