@@ -1,1 +1,10 @@
-hi
+# World Happiness & Contributing Factors
+
+__Project Overview__
+
+In our project we looked at the world happiness datasets from the website Kaggle. The datasets given included a happiness score, happiness rank, and multiple contributing factors like GDP, freedom, generosity, government trust, ect. We will be using the 2015, 2016, and 2017 happiness dataset. In our project we looked to answer two main questsion:
+
+* What main factors help contribute to higher happiness scores in 2017?
+* What the average happiness score is by continent and or region?
+
+![strike](jpg_happiness.jpeg)
