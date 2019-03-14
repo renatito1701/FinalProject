@@ -25,6 +25,7 @@ question_2 <- tabPanel(
     ),
     mainPanel(
       h3("Factors Correlating to Happiness"),
+      h4("What the main factors contributing to the happiness score?"),
       plotOutput("freePlot")
     )
   )
@@ -40,19 +41,20 @@ question_1 <- tabPanel(
     sidebarPanel(
       radioButtons(
         inputId = "extra_factor",
-        label = "extra factor",
+        label = "Extra Factor",
         choices = c("GDP", "Life Expectancy", "Trust in Government") 
       )
     ),
     mainPanel(
       h3("Average Happiness by Continent"),
+      h4("What the average happiness score is by continent and or region?"),
       plotOutput("averagePlot")
     )
   )
 )
 
 # pages
-ui <- navbarPage(
+ui <- navbarPage( theme = "bootstrap.css",
   "World Happiness Project",
   front_page,         
   question_1,

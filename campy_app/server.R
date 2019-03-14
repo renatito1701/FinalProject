@@ -10,6 +10,8 @@
 library(ggplot2)
 library(shiny)
 library(dplyr)
+library(countrycode)
+library(ggrepel)
 #question 2 wrangling
 happ17 <- read.csv("../data/2017.csv")
 free_data <- select(happ17, Freedom, Happiness.Score, Trust..Government.Corruption.)
